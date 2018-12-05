@@ -22,7 +22,6 @@ or
 `use_course("goo.gl/jiPYYk")`
 
 
-
 ## About _[Data Visualization: A Practical Introduction](http://socviz.co)_
 
 _Data Visualization: A Practical Introduction_ teaches you data visualization using R and ggplot2 in a clear, sensible, and reproducible way. It is published by Princeton University Press.  
