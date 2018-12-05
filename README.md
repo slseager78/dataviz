@@ -22,7 +22,7 @@ or
 
 ## About _[Data Visualization: A Practical Introduction](http://socviz.co)_
 
-__Data Visualization: A Practical Introduction_ teaches you data visualization using R and ggplot2 in a clear, sensible, and reproducible way. It is published by Princeton University Press.  
+_Data Visualization: A Practical Introduction_ teaches you data visualization using R and ggplot2 in a clear, sensible, and reproducible way. It is published by Princeton University Press.  
 
 ![Book Cover](assets/dv-cover-pupress.jpg)
 
