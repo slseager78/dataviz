@@ -27,7 +27,7 @@ or, with less typing:
 
 Alternatively, scroll up the page and click the green `Clone or download` button, and choose "Download ZIP" to get a zip file of the material here. 
 
-Once you have downloaded the repo, you can double-click the `dataviz.Rroj` file, and RStudio will launch a new session. You can then open `01_indtroduction.Rmd` and start following along with the text. 
+Once you have downloaded everything, you can double-click the `dataviz.Rroj` file, and RStudio will launch a new session. You can then open `01_indtroduction.Rmd` and start following along with the text. 
 
 
 ## About _[Data Visualization: A Practical Introduction](http://socviz.co)_
