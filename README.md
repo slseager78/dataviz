@@ -7,19 +7,27 @@
 
 Support files for _[Data Visualization: A Practical Introduction](http://socviz.co)_ and courses taught from it. This repo is an RStudio project and contains a series of R Markdown files organized in parallel to the book's chapters. The R Markdown files contain code to reproduce almost all the figures in the book, along with space for your own notes. A more general note-taking template can be found in the `template/` folder.
 
-With R and RStudio installed, students can use this repo via the `usethis` package. From the R console, 
+With R and RStudio installed, as described in the first few pages of the book, students and readers can use this repo via the `usethis` package. 
 
-`> install.packages("usethis", repos = "http://cran.rstudio.com")`
+From the R console, type:
 
-Then:
+`install.packages("usethis", repos = "http://cran.rstudio.com")`
+
+Then load the library:
 
 `library(usethis)`
 
+And download the contents of this repository with:
+
 `use_course("https://github.com/kjhealy/dataviz/archive/master.zip")`
 
-or
+or, with less typing:
 
 `use_course("goo.gl/jiPYYk")`
+
+Alternatively, scroll up the page and click the green `Clone or download` button, and choose "Download ZIP" to get a zip file of the material here. 
+
+Once you have downloaded the repo, you can double-click the `dataviz.Rroj` file, and RStudio will launch a new session. You can then open `01_indtroduction.Rmd` and start following along with the text. 
 
 
 ## About _[Data Visualization: A Practical Introduction](http://socviz.co)_
