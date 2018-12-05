@@ -2,7 +2,7 @@
 title: "Draw Maps"
 author: "Kieran Healy"
 date: "01-December-2018"
-output: html_document
+output: radix::radix_article
 ---
 
 ## Load Libraries
@@ -223,7 +223,7 @@ county_full <- left_join(county_map, county_data, by = "id")
 ```
 
 
-```{r ch-07-urchoro1, fig.cap='US population density by county.', out.width="100%", fig.width = 12, fig.height = 8}
+```{r ch-07-urchoro1, fig.cap='US population density by county.', out.width="100%", fig.width = 12, fig.height = 8, layout = 'l-screen-inset'}
 
 p <- ggplot(data = county_full,
             mapping = aes(x = long, y = lat,
@@ -243,7 +243,7 @@ p2 + labs(fill = "Population per\nsquare mile") +
 ```
 
 
-```{r ch-07-urchoro2, fig.cap='Percent Black population by county.', out.width="100%", fig.width = 12, fig.height = 8}
+```{r ch-07-urchoro2, fig.cap='Percent Black population by county.', out.width="100%", fig.width = 12, fig.height = 8, , layout = 'l-screen-inset'}
 
 p <- ggplot(data = county_full,
             mapping = aes(x = long, y = lat, fill = pct_black, 
@@ -269,7 +269,7 @@ orange_rev
 ```
 
 
-```{r ch-07-gunsu, fig.cap='Gun-related suicides by county; Reverse-coded population density by county.', out.width="50%", fig.show="hold", fig.width = 10, fig.height = 7}
+```{r ch-07-gunsu, fig.cap='Gun-related suicides by county; Reverse-coded population density by county.', out.width="50%", fig.show="hold", fig.width = 10, fig.height = 7, , layout = 'l-screen-inset'}
 
 gun_p <- ggplot(data = county_full,
             mapping = aes(x = long, y = lat,

@@ -2,7 +2,7 @@
 title: "Get Started"
 author: "Kieran Healy"
 date: "01-December-2018"
-output: html_document
+output: radix::radix_article
 ---
 
 ## Load Libraries

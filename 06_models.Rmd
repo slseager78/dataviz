@@ -2,7 +2,7 @@
 title: "Work with Models"
 author: "Kieran Healy"
 date: "01-December-2018"
-output: html_document
+output: radix::radix_article
 ---
 
 ## Load Libraries
@@ -317,7 +317,7 @@ out_tidy %>% sample_n(5)
 options(digits = old_digits)
 ```
 
-```{r}
+```{r, fig.height=4, fig.width=10, layout = '1-page'}
 
 p <- ggplot(data = out_tidy,
             mapping = aes(x = year, y = estimate,
@@ -451,7 +451,7 @@ out_mrg
 ```
 
 
-```{r ch-06-svyyears, fig.cap='Weighted estimates of educational attainment for Whites and Blacks, GSS selected years 1976-2016. Faceting barplots is often a bad idea, and the more facets there are the worse an idea it is. With a small-multiple plot the viewer wants to compare across panels (in this case, over time), but this is difficult to do when the data inside the panels are categorical comparisons shown as bars (in this case, education level by group).',, fig.width = 6, fig.height = 12}
+```{r ch-06-svyyears, fig.cap='Weighted estimates of educational attainment for Whites and Blacks, GSS selected years 1976-2016. Faceting barplots is often a bad idea, and the more facets there are the worse an idea it is. With a small-multiple plot the viewer wants to compare across panels (in this case, over time), but this is difficult to do when the data inside the panels are categorical comparisons shown as bars (in this case, education level by group).', layout = '1-page', fig.width = 6, fig.height = 12}
 
 p <- ggplot(data = subset(out_grp, race %nin% "Other"),
             mapping = aes(x = degree, y = prop,

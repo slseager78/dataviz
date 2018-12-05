@@ -2,7 +2,7 @@
 title: "Refining Your Plots"
 author: "Kieran Healy"
 date: "01-December-2018"
-output: html_document
+output: radix::radix_article
 ---
 
 ## Load Libraries
@@ -191,7 +191,7 @@ p3
 ```
 
 
-```{r ch-08-elec-04, fig.cap='County-level election data from 2016.', fig.width=10, fig.height=7}
+```{r ch-08-elec-04, fig.cap='County-level election data from 2016.', , layout = 'l-screen-inset', fig.width=10, fig.height=7}
 
 p4 <- p3 + geom_text_repel(data =
                                subset(county_data,

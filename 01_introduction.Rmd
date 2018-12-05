@@ -2,7 +2,7 @@
 title: "Look at Data"
 author: "Kieran Healy"
 date: "01-December-2018"
-output: html_document
+output: radix::radix_article
 ---
 
 ## Data Visualization Notes
@@ -38,7 +38,11 @@ library(socviz)
 Here, the braces at the start of the code chunk have some additional options set in them. There is the language, `r`, as before. This is required. Then there is the word `setup`, which is a label for your code chunk. Labels are useful to briefly say what the chunk does. Label names must be unique (no two chunks in the same document can have the same label) and cannot contain spaces. Then, after the comma, an option is set: `include=FALSE`. This tells R to run this code but not to include the output in the final document. 
 
 If you have not installed the required libraries yet, make sure you have an internet connection and install them now.
-```{r, eval = FALSE, echo = FALSE}
+
+```{r, eval = FALSE, echo = TRUE}
+## To install these packages, change eval = FALSE to eval = TRUE 
+## in the line above. You only need to do this once.
+
 my_packages <- c("tidyverse", "broom", "coefplot", "cowplot",
                  "gapminder", "GGally", "ggrepel", "ggridges", "gridExtra",
                  "here", "interplot", "margins", "maps", "mapproj",
@@ -47,7 +51,7 @@ my_packages <- c("tidyverse", "broom", "coefplot", "cowplot",
 
 install.packages(my_packages, repos = "http://cran.rstudio.com")
 
-devtools::install_github("kjhealy/socviz")
+devtools::install_github("kjhealy/socviz", "rstudio/radix")
 ```
 
 

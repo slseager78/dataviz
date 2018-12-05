@@ -2,7 +2,7 @@
 title: "Show the Right Numbers"
 author: "Kieran Healy"
 date: "01-December-2018"
-output: html_document
+output: radix::radix_article
 ---
 
 ## Load Libraries
@@ -56,7 +56,7 @@ p + geom_line(mapping =
 facet_wrap(~ continent)      
 ```
 
-```{r facet_polished}
+```{r facet_polished, fig.height = 5, fig.width = 12, layout = 'l-page'}
 p + geom_line(color="gray70",
               mapping=aes(group = country)) +
     geom_smooth(size = 1.1,
@@ -229,7 +229,7 @@ oecd_sum
 
 ```
 
-```{r lifegap_2}
+```{r lifegap_2, fig.height = 4, fig.width = 9, layout = 'l-page'}
 
 p <- ggplot(data = oecd_sum,
             mapping = aes(x = year, y = diff, fill = hi_lo))

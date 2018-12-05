@@ -2,7 +2,7 @@
 title: "Tables, Labels, Notes"
 author: "Kieran Healy"
 date: "01-December-2018"
-output: html_document
+output: radix::radix_article
 ---
 
 ## Load Libraries
@@ -217,7 +217,7 @@ library(ggrepel)
 elections_historic %>% select(2:7)       
 ```
 
-```{r }
+```{r, layout = 'l-screen-inset', fig.height=10, fig.width=12}
 p_title <- "Presidential Elections: Popular & Electoral College Margins"
 p_subtitle <- "1824-2016"
 p_caption <- "Data for 2016 are provisional."

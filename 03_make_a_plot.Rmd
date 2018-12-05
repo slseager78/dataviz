@@ -2,7 +2,7 @@
 title: "Make a Plot"
 author: "Kieran Healy"
 date: "01-December-2018"
-output: html_document
+output: radix::radix_article
 ---
 
 ## Load Libraries
@@ -135,7 +135,7 @@ p + geom_point(alpha = 0.3) +
 ```
 
 
-```{r, fig.cap='A more polished plot of Life Expectancy vs GDP.', fig.width=8, fig.height=5.25}
+```{r, fig.cap='A more polished plot of Life Expectancy vs GDP.', fig.width=8, fig.height=5.25, layout = 'l-page'}
 
 p <- ggplot(data = gapminder, mapping = aes(x = gdpPercap, y=lifeExp))
 p + geom_point(alpha = 0.3) + geom_smooth(method = "gam") +
