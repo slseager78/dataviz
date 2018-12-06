@@ -41,7 +41,8 @@ If you have not installed the required libraries yet, make sure you have an inte
 
 ```{r, eval = FALSE, echo = TRUE}
 ## To install these packages, change eval = FALSE to eval = TRUE 
-## in the line above. You only need to do this once.
+## in the line above. You only need to do this once. Alternatively, 
+## copy the code below and paste it into the Console window.
 
 my_packages <- c("tidyverse", "broom", "coefplot", "cowplot",
                  "gapminder", "GGally", "ggrepel", "ggridges", "gridExtra",
